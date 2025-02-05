@@ -122,6 +122,12 @@ function App() {
       <CSVReader onWordsParsed={handleWords} />
       <h2>{`Loja ${currentGameIndex + 1}`}</h2>
 
+      {attemptsLeft > 0 && (
+        <div className="instructions">
+          <p>Krijo grupe katërshe që kanë një të përbashkët.</p>
+        </div>
+      )}
+
       {/* Completed Groups Section */}
       <div className="completed-groups">
         {completedGroups.length > 0 ? completedGroups.map((group, index) => {
@@ -137,7 +143,7 @@ function App() {
           );
         }) : null}
       </div>
-
+     
       {/* Show grid only if attempts are left */}
       {attemptsLeft > 0 && (
         <div className="grid-container">
@@ -149,6 +155,7 @@ function App() {
           ))}
         </div>
       )}
+
 
       {/* Show Chances */}
       {attemptsLeft > 0 && (
