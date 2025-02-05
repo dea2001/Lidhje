@@ -80,26 +80,28 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  max-width: 800px;
+  max-width: 90vw; /* Prevents the grid from exceeding the screen width */
   justify-content: center;
-  margin: 0 auto; /* Centering the grid container */
-  width: 90vw; /* Ensures it takes full width within the max-width */
+  margin: 0 auto;
+  width: 65vw;
+  overflow-x: hidden; /* Ensures no horizontal scrolling */
+  box-sizing: border-box;
 }
 
-
 .word {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   border-radius: 15px;
   background-color: beige;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;  
-  width: 20vw;
-  max-width: 200px;   /* Centers vertically */
+  width: 100%; /* Makes sure words fit inside grid */
+  max-width: 100%; /* Ensures words do not exceed grid cells */
+  box-sizing: border-box;
 }
 
 
@@ -185,12 +187,6 @@ button {
     font-size: 45px;
   }
 
-  .word {
-    width: 20vw;
-    font-size: 16px;
-    padding: 12px;
-  }
-
   button {
     font-size: 16px;
     padding: 12px;
@@ -207,6 +203,21 @@ button {
 
   .nextButton {
     right: 5%; /* Ensures space from the right */
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .grid-container {
+    width: 95vw;
+    max-width: 95vw;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns */
+    overflow-x: hidden; /* Stops unwanted scrolling */
+  }
+
+  .word {
+    width: 100%; /* Make sure words don't cause overflow */
+    font-size: 14px; /* Adjust text size for small screens */
+    padding: 15px; /* Reduce padding for better fit */
   }
 }
 
