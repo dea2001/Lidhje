@@ -185,13 +185,13 @@ button {
 
   h2 {
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   button {
     font-size: 16px;
     padding: 12px;
-    width: 30%;
+    width: 35%;
   }
 
   .nextButton, .prevButton {
