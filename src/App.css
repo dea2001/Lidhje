@@ -179,11 +179,13 @@ button {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 36px;
+    font-size: 40px;
+    margin-top: 20px;
   }
 
-  h3 {
-    font-size: 45px;
+  h2 {
+    font-size: 25px;
+    margin-top: 20px;
   }
 
   button {
