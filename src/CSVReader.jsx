@@ -18,11 +18,11 @@ const CSVReader = ({ onWordsParsed }) => {
         groups: [
           { name: "Pjesë Trupi", words: ["Gju", "Kyç", "Shpatull", "Legen"] },
           { name: "Zona të Tiranës", words: ["Brryl", "Poligrafik", "Fresk", "Vizion"] },
-          { name: "I/E Shkathët", words: ["Brisk", "Dhelpër", "I/E Mprehtë", "Finok"] },
+          { name: "i/e Shkathët", words: ["Brisk", "Dhelpër", "i/e Mprehtë", "Finok"] },
           { name: "Gjëra të Mprehta", words: ["Shikim", "Fjalë", "Thikë", "Dhëmb"] },
         ],
       },
-      {
+      /*{
         game: "Game 3",
         groups: [
           { name: "Tekste Përputhen", words: ["Dill dill me mu nuk ka dill dill", "Sta jap çuno sta jap ti lulin dot se kap", "Foli me ty e se di a menon foli me ty e se di a dëgjon", "Ledianaaaaa e bukur sikur zanaa"] },
@@ -30,7 +30,7 @@ const CSVReader = ({ onWordsParsed }) => {
           { name: "Citate nga Bigu", words: ["Siuuuuuu", "Uakanda Foeva", "Të mirët i merr publiku", "O madre de dios hidh dy pika tru"] },
           { name: "Citate nga Kiçja", words: ["Të pres un damarët për një mashkull?! Për një feshkull?!!", "O byçkake o byçkake mamasë amaaan moj", "Ça do çuni do pith çuni ça do", "Ça thon ore zot se mdhemb koka si jap dot shpjegim"] },
         ],
-      },
+      },*/
     ];
     
     onWordsParsed(csvData);

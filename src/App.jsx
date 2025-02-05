@@ -175,7 +175,7 @@ function App() {
 
 
       {/* Next Game button */}
-      {currentGameIndex < 2 && <button onClick={handleNextGame} className="nextButton">Loja e Ardhshme</button>}
+      {currentGameIndex < 1 && <button onClick={handleNextGame} className="nextButton">Loja e Ardhshme</button>}
     </div>
   );
 }
