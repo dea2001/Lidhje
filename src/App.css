@@ -45,12 +45,11 @@ p {
   align-items: center;
   padding: 10px;
   border-radius: 8px;
-  width: 90vw;
+  max-width: 90vw;
   margin-bottom: 10px;
-  max-width: 800px; 
   justify-content: center;
   margin: 0 auto; /* Centering the grid container */
-  width: 100%; /* Ensures it takes full width within the max-width *//* Adds space between completed groups and the grid */
+  width: 65vw; /* Ensures it takes full width within the max-width *//* Adds space between completed groups and the grid */
 }
 
 .completed-words {
@@ -219,6 +218,10 @@ button {
     width: 22vw; /* Make sure words don't cause overflow */
     font-size: 14px; /* Adjust text size for small screens */
     padding: 15px; /* Reduce padding for better fit */
+  }
+
+  .completed-group {
+    width: 95vw; /* Ensures full width */
   }
 }
 
