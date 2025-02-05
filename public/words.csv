@@ -1,0 +1,20 @@
+const csvData = [
+  {
+    game: "Game 1",
+    groups: [
+      { name: "Fruits", words: ["Apple", "Banana", "Cherry", "Grape"] },
+      { name: "Animals", words: ["Dog", "Cat", "Rabbit", "Horse"] },
+      { name: "Colors", words: ["Red", "Blue", "Green", "Yellow"] },
+      { name: "Transport", words: ["Car", "Bike", "Train", "Plane"] },
+    ],
+  },
+  {
+    game: "Game 2",
+    groups: [
+      { name: "Weapons", words: ["Rock", "Paper", "Scissors", "Lizard"] },
+      { name: "Planets", words: ["Mercury", "Venus", "Earth", "Mars"] },
+      { name: "Seasons", words: ["Spring", "Summer", "Autumn", "Winter"] },
+      { name: "Shapes", words: ["Circle", "Square", "Triangle", "Rectangle"] },
+    ],
+  },
+];

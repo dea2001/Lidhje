@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-family: "warnock-pro-display", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  margin: 0;
+}
+
+h3 {
+font-family: "p22-zaner-pro-four", sans-serif;
+font-weight: 800;
+font-style: normal;
+font-size: 60px;
+color: pink;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  color: palevioletred;
+}
+
+.completed-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.completed-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 90vw;
+  margin-bottom: 10px;
+  max-width: 800px; 
+  justify-content: center;
+  margin: 0 auto; /* Centering the grid container */
+  width: 100%; /* Ensures it takes full width within the max-width *//* Adds space between completed groups and the grid */
+}
+
+.completed-words {
+  display: flex;
+  gap: 10px; /* Adds spacing between words */
+  flex-wrap: wrap; /* Ensures words don’t get too cramped */
+  justify-content: center;
+  margin-top: 5px; /* Space between group name and words */
+  font-size: 18px;
+}
+
+/*.completed-word {
+  font-size: 16px;
+  font-weight: bold;
+}*/
+
+
+.group-title {
+  font-weight: bold;
+  
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  justify-content: center;
+  margin: 0 auto; /* Centering the grid container */
+  width: 90vw; /* Ensures it takes full width within the max-width */
+}
+
+
+.word {
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: beige;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;  
+  width: 15vw;
+  max-width: 200px;   /* Centers vertically */
+}
+
+
+.word.selected {
+  background-color: lightblue;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.chances {
+  display: flex;
+  justify-content: center;  /* Align dots from left to right */
+  gap: 10px; /* Space between the dots */
+  margin-top: 20px; /* Space between the grid and the dots */
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #333; /* Filled circle color */
+  border: 2px solid #333;
+}
+
+.dot.empty {
+  background-color: transparent; /* Unfilled circle when a chance is lost */
+  border: 1px solid #333; /* Border to make it visible */
+}
+
+.hidden {
+  display: none;
+}
+
+.nextButton {
+  position: fixed;  /* Keeps it fixed on screen */
+  top: 20px;     /* Distance from bottom */
+  right: 20px;       /* Distance from left */
+  padding: 10px 20px;
+  background-color: 333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.prevButton {
+  position: fixed;  /* Keeps it fixed on screen */
+  top: 20px;     /* Distance from bottom */
+  left: 20px;       /* Distance from left */
+  padding: 10px 20px;
+  background-color: 333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nextButton:hover, .prevButton:hover {
+  background-color: #0056b3;
+}
