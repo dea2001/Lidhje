@@ -215,7 +215,7 @@ button {
   }
 
   .word {
-    width: 100%; /* Make sure words don't cause overflow */
+    width: 22vw; /* Make sure words don't cause overflow */
     font-size: 14px; /* Adjust text size for small screens */
     padding: 15px; /* Reduce padding for better fit */
   }
