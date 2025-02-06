@@ -225,6 +225,8 @@ button {
 
   .completed-group {
     width: 95vw; /* Ensures full width */
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
   .instructions {
     font-size: 14px;
