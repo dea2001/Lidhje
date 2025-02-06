@@ -8,7 +8,7 @@ const CSVReader = ({ onWordsParsed }) => {
         game: "Game 1",
         groups: [
           { name: "Vëllezer", words: ["Frashëri", "Prifti", "Xhaka", "Veshaj"] },
-          { name: "Sinonime të fjalës 'Fat'", words: ["Nafakë", "Kismet", "Short", "Paracaktim"] },
+          { name: "Fat", words: ["Nafakë", "Kismet", "Llotari", "Paracaktim"] },
           { name: "__ zi", words: ["Mjekër", "Fat", "Derë", "Marrë"] },
           { name: "Personazhe në Kartmonedha 10-she", words: ["Aleksandër", "Pjetër", "Elizabeta", "Çarls"] },
         ],
@@ -22,15 +22,24 @@ const CSVReader = ({ onWordsParsed }) => {
           { name: "Gjëra të Mprehta", words: ["Shikim", "Fjalë", "Thikë", "Dhëmb"] },
         ],
       },
-      /*{
+      {
         game: "Game 3",
         groups: [
-          { name: "Tekste Përputhen", words: ["Dill dill me mu nuk ka dill dill", "Sta jap çuno sta jap ti lulin dot se kap", "Foli me ty e se di a menon foli me ty e se di a dëgjon", "Ledianaaaaa e bukur sikur zanaa"] },
-          { name: "Citate nga Ujku", words: ["A kena shtet a nuk kenaaaa?! O Edi Ramaa", "Oboboo larg qoft laj laj ilalla", "Ooo si smu ndan iher kto mamit mu që janë tndame", "Ne spo dalim nprotest për tdrejtat e njeriut"] },
-          { name: "Citate nga Bigu", words: ["Siuuuuuu", "Uakanda Foeva", "Të mirët i merr publiku", "O madre de dios hidh dy pika tru"] },
-          { name: "Citate nga Kiçja", words: ["Të pres un damarët për një mashkull?! Për një feshkull?!!", "O byçkake o byçkake mamasë amaaan moj", "Ça do çuni do pith çuni ça do", "Ça thon ore zot se mdhemb koka si jap dot shpjegim"] },
+          { name: "Mendjemadh", words: ["Fodull", "Madhëria e tij/saj", "Hundpërpjetë", "Zotrote"] },
+          { name: "Princeshë", words: ["Mbi bizele", "Diana", "Mononoke", "Aurora"] },
+          { name: "Lule", words: ["Mos më prek", "Balli", "Narcizi", "Lakër"] },
+          { name: "Me Shtresa", words: ["Përbindësh", "Qepa", "Lazanja", "Shoqëria"] },
         ],
-      },*/
+      },
+      {
+        game: "Game 4",
+        groups: [
+          { name: "Armiqësi", words: ["Hasmëri", "Inat", "Luftë", "Urrejtje"] },
+          { name: "Fillon me Metal", words: ["Armik", "Hekurudhë", "Argjendar", "Titanik"] },
+          { name: "Fjale me 'Udhë'", words: ["Rrudhë", "Udhëtar", "Udhëkalim", "Udhëkryq"] },
+          { name: "Gjera të Kuqe", words: ["Bakër", "Gjak", "Qershi", "Trëndafil"] },
+        ],
+      },
     ];
     
     onWordsParsed(csvData);

@@ -172,17 +172,12 @@ function App() {
       {/* Show message for 2 seconds */}
       {message && <p>{message}</p>}
 
-      <button 
-  onClick={handlePreviousGame} 
-  className="prevButton"
-  disabled={currentGameIndex === 0} // Disable if on the first game
->
-  Loja e Kaluar
-</button>
 
+      
+      {currentGameIndex > 0 && <button onClick={handlePreviousGame} className="prevButton">Loja e Kaluar</button>}
 
       {/* Next Game button */}
-      {currentGameIndex < 1 && <button onClick={handleNextGame} className="nextButton">Loja e Ardhshme</button>}
+      {currentGameIndex < 3 && <button onClick={handleNextGame} className="nextButton">Loja e Ardhshme</button>}
     </div>
   );
 }
