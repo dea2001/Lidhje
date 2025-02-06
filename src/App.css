@@ -214,6 +214,7 @@ button {
     grid-template-columns: repeat(4, 1fr); /* Ensures 4 columns */
     overflow-x: hidden; /* Stops unwanted scrolling */
     gap: 5px; /* Adds space between words */
+    margin-top: 0px;
   }
 
   .word {
